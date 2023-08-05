@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // let's create user schema
-const transectionHistroySchema = new mongoose.Schema({
+const transactionHistroySchema = new mongoose.Schema({
   transectionId: {
     type: Number,
     required: true,
@@ -18,12 +18,12 @@ const transectionHistroySchema = new mongoose.Schema({
     trim: true,
     maxlength: [30, "Name connot be more than 30 characters"],
   },
-  transectionAmount: {
+  transactionAmount: {
     type: Number,
     required: true,
   },
 });
 
 module.exports =
-  mongoose.models.TransectionHistory ||
-  mongoose.model("TransectionHistory", transectionHistroySchema);
+  mongoose.models.TransactionHistory ||
+  mongoose.model("TransactionHistory", transactionHistroySchema);
