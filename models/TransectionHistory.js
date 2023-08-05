@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 // let's create user schema
 const transactionHistroySchema = new mongoose.Schema({
-  transectionId: {
+  transactionId: {
     type: Number,
     required: true,
   },
